@@ -1,49 +1,29 @@
-// var number = 30;
+var startGame = $("#start-button");
+var questionsList = $(".questions");
+var questions = $("#question");
+var timeLeft = $("#timer");
 
-// var intervalId;
+$(document).ready(function () {
 
-// $("start").on("click", run);
+    $(".game-container").hide();
+    $('#disappear').click(function () {
+        $(".game-container").fadeIn();
+        $(this).hide();
+    });
+});
 
-// function run() {
-//     clearInterval(intervalId);
-//     intervalId = setInterval(decrement, 1000);
-// }
-
-// function decrement() {
-
-//     number--;
-
-//     $("#show-number").html("<h2>" + number + "</h2>");
-
-//     if (number === 0) {
-//         stop();
-//         alert("Time Up!");
-//     }
-// }
-
-// run();
-
-var questions = [{
-    question: "1) Who is the all time leading point scorer in NBA history?",
-    choices: ["Kobe Bryant", "Lebron James", "Kareem Abdul-Jabbar", "Michael Jordan"],
-    correctAnswer: 2
-}, {
-    question: "2) What city in Australia has the highest population?",
-    choices: ["Sydney", "Perth", "Melbourne", "Brisbane"],
-    correctAnswer: 0
-}, {
-    question: "3) What blood type do you need to be a universal donor?",
-    choices: ["Type O+", "Type O-", "Type A+", "Type B-"],
-    correctAnswer: 1
-}, {
-    question: "4) What ingredient in bread causes it to rise?",
-    choices: ["Flour", "Milk", "Eggs", "Yeast"],
-    correctAnswer: 3
-}, {
-    question: "5) What is the third most abundant gas in Earth’s atmosphere?",
-    choices: ["Argon", "Helium", "Nitrogen", "Oxygen"],
-    correctAnswer: 0
-}, {
-}];
-
-var 
+$('.answer1').click(function () {
+    $('.answer1').not(this).prop('checked', false);
+});
+$('.answer2').click(function () {
+    $('.answer2').not(this).prop('checked', false);
+});
+$('.answer3').click(function () {
+    $('.answer3').not(this).prop('checked', false);
+});
+$('.answer4').click(function () {
+    $('.answer4').not(this).prop('checked', false);
+});
+$('.answer5').click(function () {
+    $('.answer5').not(this).prop('checked', false);
+});
