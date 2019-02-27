@@ -14,13 +14,11 @@
     <div class="container">
         <h1><strong>Random Trivia</strong></h1>
         <div id="disappear">
-            <button class="start-button" onclick="begin()">Start Game</button>
+            <button id="start-button">Start Game</button>
         </div>
-        <p id="timer" class="timer">
-            25
-        </p>
         <br>
         <div class="game-container">
+            <div id="timer"></div>
             <div class="questions">
                 <div class="question">
                     <p><span class="number1">1) </span><span class="questionText">Who is the all time leading point
@@ -102,6 +100,7 @@
             </div>
         </div>
     </div>
+    <div id="results"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/app.js"></script>
 

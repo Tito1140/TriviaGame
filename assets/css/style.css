@@ -3,6 +3,22 @@
 }
 
 body {
-    /* background-image: url("assets/images/gradient.jpeg") */
     background: radial-gradient(circle, red, white);
+    /* background: url(https://wallimpex.com/data/out/721/galaxy-wallpaper-1080p-10725625.jpg) */
+}
+
+.game-container {
+    font-size: 20px;
+}
+.questionText {
+    font-size: 25px;
+    font-display: bold;
+}
+h1 {
+    color: white;
+    font-display: bold;
+    font-size: 45px;
+}
+input[type="radio"] {
+    background: red;
 }
